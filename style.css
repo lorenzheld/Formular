@@ -23,7 +23,7 @@ body {
     margin-bottom: 15px;
     padding: 10px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-around;
     background-color: #fff;
     border-radius: 50px;
   }
@@ -37,6 +37,7 @@ body {
   
   input,
   textarea,
+  option,
   select {
     width: 50%;
     padding: 15px;
@@ -59,11 +60,12 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    
 
   }
   
   button:hover {
-    background-color: #333;
+    background-color: #b6d1fc;
   }
   
   .error {
@@ -72,4 +74,16 @@ body {
   }
   input:valid {
     background-color: #dbe4f0;
+  }
+
+  .row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .row{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }

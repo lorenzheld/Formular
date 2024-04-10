@@ -13,49 +13,59 @@
     <div class="backgr">
         <main>
             <form action="" method="post">
-            <div class="form-group">
-                <label for="geschlecht">Geschlecht:</label>
-                <select id="geschlecht" name="geschlecht">
-                <option value="männlich">Männlich</option>
-                <option value="weiblich">Weiblich</option>
-                <option value="divers">Divers</option>
-                </select>
+            <div class="row2">    
+                <div class="row">   
+                    <div class="form-group">
+                        <label for="geschlecht">Geschlecht:</label>
+                        <select id="geschlecht" name="geschlecht">
+                        <option value="männlich">Männlich</option>
+                        <option value="weiblich">Weiblich</option>
+                        <option value="divers">Divers</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vorname">Vorname:</label>
+                        <input type="text" id="vorname" name="vorname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="geburtsdatum">Geburtsdatum:</label>
+                        <input type="date" id="geburtsdatum" name="geburtsdatum " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="strasse">Strasse und Nr.:</label>
+                        <input type="text" id="strasse" name="strasse" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="plz">PLZ:</label>
+                        <input type="text" id="plz" name="plz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ort">Ort:</label>
+                        <input type="text" id="ort" name="ort" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="handy">Handy-Nummer:</label>
+                        <input type="tel" id="handy" name="handy" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kontaktart">Art der Kontaktaufnahme:</label>
+                        <select id="kontaktart" name="kontaktart">
+                        <option value="email">Email</option>
+                        <option value="telefon">Telefon</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" required>
-            </div>
-            <div class="form-group">
-                <label for="strasse">Strasse und Nr.:</label>
-                <input type="text" id="strasse" name="strasse" required>
-            </div>
-            <div class="form-group">
-                <label for="plz">PLZ:</label>
-                <input type="text" id="plz" name="plz" required>
-            </div>
-            <div class="form-group">
-                <label for="ort">Ort:</label>
-                <input type="text" id="ort" name="ort" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="handy">Handy-Nummer:</label>
-                <input type="tel" id="handy" name="handy" required>
-            </div>
-            <div class="form-group">
-                <label for="kontaktart">Art der Kontaktaufnahme:</label>
-                <select id="kontaktart" name="kontaktart">
-                <option value="email">Email</option>
-                <option value="telefon">Telefon</option>
-                </select>
-            </div>
+
             <div class="form-group">
                 <label for="motivation">Motivationsschreiben:</label>
                 <textarea id="motivation" name="motivation" rows="5" required></textarea>
@@ -76,7 +86,9 @@
                 <input type="checkbox" id="datenschutz" name="datenschutz" required>
                 <label for="datenschutz">Ich habe die <a href="#">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.</label>
             </div>
-            <button type="submit">Bewerbung absenden</button>
+            
+            <button type="submit"><img src="https://cdn-icons-png.flaticon.com/128/3178/3178158.png" height="15px"> Absenden</button>
+            
             </form>
         </main>
 
