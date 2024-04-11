@@ -23,11 +23,24 @@ body {
     margin-bottom: 15px;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fff;
     border-radius: 50px;
   }
+
+  .row > .form-group{
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 50px;
+    align-items: stretch;
+    width: 45%;
+    
+  }
   
+
   label {
     display: block;
     margin-bottom: 5px;
@@ -42,11 +55,14 @@ body {
     width: 50%;
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: #F0F4F9;
-    
-    
   }
+
+  select{
+    width: 58%;
+  }
+
   
   textarea {
     height: 100px;
@@ -87,3 +103,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+
+  #Datenschutzbestimmungen{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+  }
+
