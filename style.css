@@ -112,3 +112,64 @@ body {
     
   }
 
+
+
+  input:focus, 
+textarea:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #007bff; /* Add blue glow */
+}
+
+/* Input Validation Feedback */
+input:valid {
+    background-color: #dbe4f0; /* Light green background */
+}
+
+input:invalid {
+    animation: shake 0.5s ease-in-out; /* Add shake animation */
+    border: 2px solid red; /* Red border */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+}
+
+/* Submit Button Hover Effect */
+button:hover {
+    transform: scale(1.1); /* Scale up */
+    background-color: #17a2b8; /* Darker blue background */
+}
+
+/* Form Submission Feedback */
+.success-message {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position for animation */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the message */
+    padding: 20px;
+    background-color: #dff0d8; /* Light green background */
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Overall Form Transition on Submit (Optional) */
+.form-container {
+    transition: transform 0.5s ease-in-out; 
+}
+
+.form-container.submitted {
+    transform: translateY(-50px); 
+}
+

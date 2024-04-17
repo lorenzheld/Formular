@@ -18,6 +18,7 @@
                     <div class="form-group">
                         <label for="geschlecht">Geschlecht:</label>
                         <select id="geschlecht" name="geschlecht">
+                        <option value="auswählen">Auswählen</option>
                         <option value="männlich">Männlich</option>
                         <option value="weiblich">Weiblich</option>
                         <option value="divers">Divers</option>
@@ -76,11 +77,11 @@
             </div>
             <div class="form-group">
                 <label for="portfolio">Link zu Portfolio:</label>
-                <input type="url" id="portfolio" name="portfolio">
+                <input type="url" id="portfolio" name="portfolio" required>
             </div>
             <div class="form-group">
                 <label for="github">Link zu Github-Account:</label>
-                <input type="url" id="github" name="github">
+                <input type="url" id="github" name="github" required>
             </div>
             <div class="form-group" id="Datenschutzbestimmungen"> 
                 <label for="datenschutz" >Ich habe die <a href="#">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.</label>
