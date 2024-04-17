@@ -28,6 +28,11 @@ body {
     border-radius: 50px;
   }
 
+  .form-group:hover {
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out; 
+}
+
   .row > .form-group{
     margin-bottom: 15px;
     padding: 10px;
@@ -139,7 +144,6 @@ input:invalid {
     50% { transform: translateX(0); }
 }
 
-/* Submit Button Hover Effect */
 button:hover {
     transform: scale(1.1); /* Scale up */
     background-color: #17a2b8; /* Darker blue background */
@@ -171,5 +175,31 @@ button:hover {
 
 .form-container.submitted {
     transform: translateY(-50px); 
+}
+
+.header{
+  background-color: #D3E3FD;
+  top: 0;
+  width: 90%;
+  z-index: 99;
+  position: fixed;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+
+}
+
+.header1{
+  display: flex;
+  justify-content: center;
+}
+
+.backgr{
+  padding-top: 5em;
+}
+
+input::file-selector-button{
+  background-color: #b6d1fc;
+  border-radius: 20px;
 }
 
